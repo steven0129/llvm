@@ -1,4 +1,4 @@
-FROM nvidia/cuda:9.2-devel-ubuntu16.04
+FROM nvidia/cuda:9.2-cudnn7-devel-ubuntu16.04
 MAINTAINER steven0129
 
 RUN apt-get update
