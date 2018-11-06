@@ -3,6 +3,8 @@ MAINTAINER steven0129
 
 RUN apt-get update
 RUN apt-get install -y git wget cmake
+RUN wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+RUN bash Miniconda3-latest-Linux-x86_64.sh && rm Miniconda3-latest-Linux-x86_64.sh
 RUN git clone https://github.com/llvm-mirror/llvm.git
 RUN git clone https://github.com/llvm-mirror/clang.git llvm/tools/clang
 RUN mkdir llvm/build
