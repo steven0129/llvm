@@ -11,7 +11,7 @@ RUN git clone https://github.com/llvm-mirror/llvm.git
 RUN git clone https://github.com/llvm-mirror/clang.git llvm/tools/clang
 RUN mkdir llvm/build
 RUN cmake -G "Unix Makefiles" llvm
-RUN (cd llvm/build && make)
-RUN (cd llvm/build && make install)
+RUN "(cd llvm/build && make)"
+RUN "(cd llvm/build && make install)"
 
 CMD ["bash"]
