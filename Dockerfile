@@ -1,6 +1,8 @@
 FROM nvidia/cuda:9.2-cudnn7-devel-ubuntu16.04
 MAINTAINER steven0129
 
+ENV PATH /miniconda3/bin:$PATH
+
 RUN apt-get update
 RUN apt-get install -y git wget cmake
 RUN wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
