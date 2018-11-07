@@ -14,6 +14,6 @@ RUN cmake -G "Unix Makefiles" llvm
 RUN cd llvm/build
 RUN make
 RUN make install
-RUN cd ..
+RUN cd /
 
 CMD ["bash"]
